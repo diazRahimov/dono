@@ -17,7 +17,7 @@ body{
   overflow-x:hidden;
   background:
     linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.45)),
-    url("{{ url_for('static', filename='images/arcane.jpg') }}");
+    url("images/arcane.jpg");
   background-size:cover;
   background-position:center;
 }
@@ -210,7 +210,7 @@ footer{
     </div>
 
     <model-viewer
-      src="{{ cake_model }}"
+      src="models/cake.glb"
       auto-rotate
       rotation-per-second="25deg"
       camera-controls
@@ -268,7 +268,7 @@ footer{
 </div>
 
 <audio id="music" loop>
-  <source src="{{ url_for('static', filename='music/romantic.mp3') }}">
+  <source src="music/romantic.mp3">
 </audio>
 
 <script>
